@@ -2,10 +2,10 @@
 
 This project is an **AI-powered Fake News Detection System** with a modern **Tkinter GUI**, combining:
 
-- **Machine Learning (ML) Models**
-- **TF-IDF Vectorization**
-- **Google Gemini API (Enhanced Fact-Checking)**
-- **Smart Verification Mode** — ML predicts first, Gemini verifies *only if fake*
+* **Machine Learning (ML) Models**
+* **TF-IDF Vectorization**
+* **Google Gemini API (Enhanced Fact-Checking)**
+* **Smart Verification Mode** — ML predicts first, Gemini verifies *only if fake*
 
 It is optimized for **speed, accuracy, and real-time news analysis**.
 
@@ -14,32 +14,37 @@ It is optimized for **speed, accuracy, and real-time news analysis**.
 ## 🚀 Features
 
 ### 🔥 **1. Smart Verification Mode**
-- ML model predicts first (fast)
-- If prediction = **FAKE**, Gemini API performs deep verification  
-- Saves time + API usage
+
+* ML model predicts first (fast)
+* If prediction = **FAKE**, Gemini API performs deep verification
+* Saves time + API usage
 
 ### 🧠 **2. Multiple ML Models Trained**
-- Multinomial Naive Bayes  
-- Logistic Regression  
-- Random Forest  
-- Linear SVM  
-- Automatically selects **best-performing model**
+
+* Multinomial Naive Bayes
+* Logistic Regression
+* Random Forest
+* Linear SVM
+* Automatically selects **best-performing model**
 
 ### 🎨 **3. Modern Tkinter GUI**
-- Dark theme  
-- Tabs: *Detect News*, *Model Info*, *Settings*  
-- Loading animation during Gemini verification  
+
+* Dark theme
+* Tabs: *Detect News*, *Model Info*, *Settings*
+* Loading animation during Gemini verification
 
 ### 💬 **4. Detailed Analysis Output**
-- Prediction (REAL or FAKE)  
-- Confidence score  
-- Real/Fake probability  
-- Gemini reasons & findings  
+
+* Prediction (REAL or FAKE)
+* Confidence score
+* Real/Fake probability
+* Gemini reasons & findings
 
 ### 📦 **5. Fully Optimized Preprocessing**
-- Fast text cleaning  
-- NLTK tokenizer / lemmatizer  
-- Handles large CSV datasets  
+
+* Fast text cleaning
+* NLTK tokenizer / lemmatizer
+* Handles large CSV datasets
 
 ---
 
@@ -48,10 +53,8 @@ It is optimized for **speed, accuracy, and real-time news analysis**.
 > You can add screenshots like this:
 
 ```
-
 ![App Screenshot](screenshots/main_gui.png)
 ![Fake Verification](screenshots/fake_check.png)
-
 ```
 
 ---
@@ -59,7 +62,6 @@ It is optimized for **speed, accuracy, and real-time news analysis**.
 ## 📁 Project Structure
 
 ```
-
 📦 FakeNewsDetector-AI
 │
 ├── GUIFakeNewsDect2.py        # Main application (GUI + ML + Gemini)
@@ -67,8 +69,7 @@ It is optimized for **speed, accuracy, and real-time news analysis**.
 ├── gemini_config.json         # Stores API key (auto created)
 ├── README.md                  # Project documentation
 └── screenshots/               # Add your images here
-
-````
+```
 
 ---
 
@@ -76,7 +77,7 @@ It is optimized for **speed, accuracy, and real-time news analysis**.
 
 ### **1️⃣ Install Python 3.10+**
 
-Download from: https://www.python.org/downloads/
+Download from: [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
 ---
 
@@ -84,13 +85,11 @@ Download from: https://www.python.org/downloads/
 
 ```bash
 pip install pandas numpy nltk scikit-learn matplotlib seaborn tqdm google-generativeai
-````
+```
 
 ---
 
 ### **3️⃣ Download NLTK resources**
-
-The script will auto-download, but you can also run:
 
 ```python
 import nltk
@@ -111,7 +110,7 @@ nltk.download('wordnet')
 * Open the GUI → Settings tab
 * Paste your key → Save
 
-Or manually create `gemini_config.json`:
+Or manually create:
 
 ```json
 {
@@ -151,31 +150,29 @@ The GUI will open automatically.
 ### **Step 2 — ML Prediction**
 
 * TF-IDF vectorizer creates 3000 features
-* Best model predicts **REAL/FAKE**
+* Best model predicts REAL/FAKE
 * ML confidence is calculated
 
 ### **Step 3 — Smart Verification (Fake Only)**
 
-* Gemini API re-checks the news
-* Returns:
+Gemini returns:
 
-  * verdict (real/fake)
-  * confidence
-  * reasons
-  * key findings
-  * fact-check notes
+* verdict
+* confidence
+* reasons
+* key findings
+* fact-check notes
 
 ### **Step 4 — GUI Output**
 
-* Shows final verified result
-* Probability graph (text-based)
-* Reasons for decision
+* Final verified result
+* Real/Fake probability
+* Explanation
+* Confidence
 
 ---
 
 ## 📊 Model Performance (Sample)
-
-Your script automatically trains & prints:
 
 ```
 Multinomial Naive Bayes   : 91.3%
@@ -201,8 +198,8 @@ Linear SVM                : 93.6%  ← BEST MODEL
 
 ## 🙌 Credits
 
-Developed by **Amar Jaleel**
-Google Cybersecurity Certificate — Completed Nov 27, 2025
+Developed by **MUHAMMAD ISMAIL**
+*Fake News Detector AI Project — 2025*
 
 Cover Image / Banner can be added here.
 
@@ -211,5 +208,4 @@ Cover Image / Banner can be added here.
 ## 📄 License
 
 This project is **open-source** and free to use.
-
 
